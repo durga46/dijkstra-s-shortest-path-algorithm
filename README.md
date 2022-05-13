@@ -172,7 +172,8 @@ def breadth_first_search(problem):
 ## SOLUTION JUSTIFICATION:
 Once the algorithm has been carried out you can find the least weight path to all permanently labelled nodes. We don’t need a new diagram for each pass.
 ## OUTPUT:
-![ai output](https://user-images.githubusercontent.com/75235704/168218258-db377739-a0b6-43ec-bcd1-5deba956e5a4.png)
+![ai output](https://user-images.githubusercontent.com/75235704/168254110-361f5a0d-f65d-4e09-aa45-4f63c2e6c3e2.png)
+
 
 
 ## RESULT:
