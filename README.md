@@ -25,9 +25,7 @@ Display the route sequence.
 
 
 ## ROUTE MAP
-#### Include your own map
-#### Example map
-![ alt text for screen readers](./images/map1.jpg "Map around my house")
+![route map](https://user-images.githubusercontent.com/75235704/168218587-0939552d-1375-4a45-877f-4c0f049ec9ae.png)
 
 ## PROGRAM
 ```python
@@ -152,13 +150,33 @@ def g(n):
     return n.path_cost
 ```
 ## Route Finding Problems
-
+```python
+def breadth_first_search(problem):
+   "Search shallowest nodes in the search tree first."
+   node = Node(problem.initial)
+   if problem.is_goal(problem.initial):
+       return node
+   frontier = FIFOQueue([node])
+   reached = {problem.initial}
+   while frontier:
+       node = frontier.pop()
+       for child in expand(problem, node):
+           s = child.state
+           if problem.is_goal(s):
+               return child
+           if s not in reached:
+               reached.add(s)
+               frontier.appendleft(child)
+   return failure
+```
 ## SOLUTION JUSTIFICATION:
 Once the algorithm has been carried out you can find the least weight path to all permanently labelled nodes. We don’t need a new diagram for each pass.
 ## OUTPUT:
+![ai output](https://user-images.githubusercontent.com/75235704/168218258-db377739-a0b6-43ec-bcd1-5deba956e5a4.png)
 
-Justify that the algorithm always returns the shortest path:
 
 ## RESULT:
 
+Hence, Dijkstra's shortest path algorithm was implemented for a route finding problem.
+   
 
