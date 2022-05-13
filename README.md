@@ -153,6 +153,8 @@ def g(n):
 ```
 ## Route Finding Problems
 
+## SOLUTION JUSTIFICATION:
+Once the algorithm has been carried out you can find the least weight path to all permanently labelled nodes. We don’t need a new diagram for each pass.
 ## OUTPUT:
 
 Justify that the algorithm always returns the shortest path:
